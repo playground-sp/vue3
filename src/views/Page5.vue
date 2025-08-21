@@ -1,0 +1,7 @@
+<script setup lang="ts"></script>
+
+<template>
+  <main>
+    <h1>Page 5</h1>
+  </main>
+</template>
