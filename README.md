@@ -37,3 +37,18 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## GitHub Pages deploy
+
+Create a worktree folder one level up, bound to branch `branchName`
+
+```bash
+branchName="gh-pages"
+directoryPath="../${PWD##*/}_gh-pages"
+
+git worktree add -B "${branchName}" "${directoryPath}"
+# remove code files
+# commit and push
+```
+
+then use [gh-pages-deploy.sh](gh-pages-deploy.sh) to deploy the project to GitHub Pages.
