@@ -12,7 +12,7 @@ if [ ! -d "${directoryPath}" ]; then
 fi
 
 
-VITE_BASE_URL=/invoice-app-front/ npm run build-only
+VITE_BASE_URL=/vue3/ npm run build-only
 rsync -av dist/ "${directoryPath}"/
 cd "${directoryPath}"
 git add -A
